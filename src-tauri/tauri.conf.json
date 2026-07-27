@@ -1,0 +1,68 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "InkNote",
+  "version": "1.0.1",
+  "identifier": "com.luckytiger.inknote",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "label": "main",
+        "title": "InkNote",
+        "width": 1280,
+        "height": 800,
+        "minWidth": 900,
+        "minHeight": 560,
+        "resizable": true,
+        "decorations": false,
+        "center": true,
+        "dragDropEnabled": true,
+        "skipTaskbar": false,
+        "visible": true,
+        "focus": true,
+        "maximizable": true,
+        "minimizable": true,
+        "closable": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis", "msi"],
+    "publisher": "InkNote",
+    "category": "Productivity",
+    "shortDescription": "Local-first Markdown notes for Windows",
+    "longDescription": "InkNote is a privacy-first local Markdown notebook with SQLite storage, full-text search, groups, and export/import.",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "allowDowngrades": true,
+      "nsis": {
+        "installMode": "currentUser",
+        "languages": ["SimpChinese"],
+        "displayLanguageSelector": false,
+        "startMenuFolder": "InkNote",
+        "compression": "lzma",
+        "template": "./windows/installer.nsi"
+      },
+      "wix": {
+        "language": "zh-CN",
+        "upgradeCode": "f3bb9b5c-c5fd-5a26-ab60-d62d9e3c2e0e"
+      }
+    }
+  }
+}

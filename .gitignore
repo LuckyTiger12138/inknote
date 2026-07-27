@@ -1,0 +1,45 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Tauri / Rust
+src-tauri/target
+src-tauri/gen
+Cargo.lock.bak
+
+# OS / env
+Thumbs.db
+Desktop.ini
+.env
+.env.*
+!.env.example
+
+# Local data / backups
+*.db
+*.db-wal
+*.db-shm
+data/
+
+# Installers belong on GitHub Releases, not in source tree
+/releases/
