@@ -27,9 +27,18 @@ pub fn run() {
         })
         .on_window_event(|window, event| {
             if let WindowEvent::CloseRequested { api, .. } = event {
-                // X button: hide to tray, keep process alive
-                api.prevent_close();
-                let _ = window.hide();
+                let label = window.label();
+                if label == "tray-menu" {
+                    // Tray popup: only hide, never destroy
+                    api.prevent_close();
+                    let _ = window.hide();
+                    return;
+                }
+                if label == "main" {
+                    // Main X: hide to tray, keep process alive
+                    api.prevent_close();
+                    let _ = window.hide();
+                }
             }
         })
         .invoke_handler(tauri::generate_handler![

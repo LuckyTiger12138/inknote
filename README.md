@@ -1,4 +1,4 @@
-# InkNote 1.0.1
+# InkNote 1.0.2
 
 Windows **本地优先** Markdown 笔记工具（可发布版）。
 
@@ -9,7 +9,8 @@ Windows **本地优先** Markdown 笔记工具（可发布版）。
 安装包发布在 **GitHub Releases**：
 
 - [Releases 页面](https://github.com/LuckyTiger12138/inknote/releases)
-- [v1.0.1 · setup.exe](https://github.com/LuckyTiger12138/inknote/releases/download/v1.0.1/InkNote_1.0.1_x64-setup.exe)（推荐，构建后可用）
+- [v1.0.2 · setup.exe](https://github.com/LuckyTiger12138/inknote/releases/download/v1.0.2/InkNote_1.0.2_x64-setup.exe)（推荐）
+- [v1.0.1 · setup.exe](https://github.com/LuckyTiger12138/inknote/releases/download/v1.0.1/InkNote_1.0.1_x64-setup.exe)
 - [v1.0.0 · setup.exe](https://github.com/LuckyTiger12138/inknote/releases/download/v1.0.0/InkNote_1.0.0_x64-setup.exe)
 
 ## 功能一览
@@ -81,5 +82,6 @@ Markdown 含 YAML frontmatter（id / tags / notebook / pinned 等）。
 
 ## 版本
 
+**1.0.2** — 托盘右键菜单点击外部可关闭  
 **1.0.1** — 托盘、分组、右键菜单与窗口控制修复  
 安装包见 [Releases](https://github.com/LuckyTiger12138/inknote/releases)。

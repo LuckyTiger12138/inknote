@@ -1,6 +1,6 @@
 [package]
 name = "inknote"
-version = "1.0.1"
+version = "1.0.2"
 description = "InkNote — local-first Markdown notes for Windows"
 authors = ["InkNote"]
 edition = "2021"
